@@ -1,6 +1,6 @@
 ﻿namespace prototipo.Vista
 {
-    partial class nivelPoo
+    partial class Index
     {
         /// <summary>
         /// Required designer variable.
@@ -28,18 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // nivelPoo
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 381);
-            this.Name = "nivelPoo";
-            this.Text = "nivelPoo";
-            this.Load += new System.EventHandler(this.nivelPoo_Load);
-            this.ResumeLayout(false);
-
+            this.Text = "Index";
         }
 
         #endregion

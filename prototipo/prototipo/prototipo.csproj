@@ -47,6 +47,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\Persona.cs" />
+    <Compile Include="Vista\Index.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Index.Designer.cs">
+      <DependentUpon>Index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\menú.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\menú.Designer.cs">
+      <DependentUpon>menú.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\nivelBasedeDatos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +79,15 @@
     <Compile Include="Vista\nivelRedes.Designer.cs">
       <DependentUpon>nivelRedes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Registro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Registro.Designer.cs">
+      <DependentUpon>Registro.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Vista\menú.resx">
+      <DependentUpon>menú.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\nivelBasedeDatos.resx">
       <DependentUpon>nivelBasedeDatos.cs</DependentUpon>
     </EmbeddedResource>
