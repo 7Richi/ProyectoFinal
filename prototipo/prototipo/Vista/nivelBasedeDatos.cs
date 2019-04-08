@@ -17,7 +17,9 @@ namespace prototipo
             InitializeComponent();
             Button[,] boton = new Button[10, 10];
             string[] words = { "ENTIDAD", "ATRIBUTO", "EVALL","PRIMARIA", "FORANEA", "RELACION", "SQL", "SCRIPT", "SSECCA", "TABLA" };
-           
+            Random alea = new Random();
+            string[] letras = { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" };
+
             for (int i = 0; i < 10; i++)
             {//INICIO DE CICLO FOR
                 for (int j = 0; j < 10; j++)
@@ -69,6 +71,22 @@ namespace prototipo
                 string word = words[4];
                 boton[8, cont + 2].Text = word[cont].ToString();
             }//FIN DEL FOR
+
+
+            for (int i = 0; i < 10; i++)
+            {//INICIO DE UN FOR
+                for (int j = 0; j < 10; j++)
+                {//INICIO DE UN FOR DENTRO DE OTRO
+                    if (boton[i, j].Text.Equals(""))
+                    {
+                        int aleatorio = alea.Next(25);
+                        string caracter = letras[aleatorio];
+                        boton[i, j].BackColor = Color.White;
+                        boton[i, j].Text = caracter;//String.Format("{0},{1}", i, j);
+                    }
+                }//FIN DE CICLO FOR DENTRO DE
+            }//FIN DE FOR
+
         }
 
         private void Form1_Load(object sender, EventArgs e)

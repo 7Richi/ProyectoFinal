@@ -19,7 +19,8 @@ namespace prototipo.Vista
             string[] words = { "CICLOS", "ATRIBUTOS", "CLASE", "SHARP", "VARIABLE",
                 "STRING", "NOICNUF", "HERENCIA", "SECUENCIALES", "ARREGLOS", "PRIVADA",
                 "PUBLICA", "NIAM", "USING", "STATIC" };
-
+            Random alea = new Random();
+            string[] letras = { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" };
             //words[0] = "Datos";
             //words[1] = "Base";
             //words[2] = "Programacion";
@@ -74,9 +75,46 @@ namespace prototipo.Vista
             }//FIN DEL FOR
 
 
+
+
+            for (int i = 0; i < 15; i++)
+            {//INICIO DE UN FOR
+                for (int j = 0; j < 15; j++)
+                {//INICIO DE UN FOR DENTRO DE OTRO
+                    if (boton[i, j].Text.Equals("")) {
+                        int aleatorio = alea.Next(25);
+                        string caracter = letras[aleatorio];
+                        boton[i, j].BackColor = Color.White;
+                        boton[i, j].Text = caracter;//String.Format("{0},{1}", i, j);
+                    }
+                }//FIN DE CICLO FOR DENTRO DE
+                }//FIN DE FOR
+
+
+
         }
 
         private void nivelPoo_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
