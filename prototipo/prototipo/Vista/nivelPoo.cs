@@ -118,5 +118,12 @@ namespace prototipo.Vista
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            formaMenu inicio = new formaMenu();
+            inicio.Show();
+            this.Hide();
+        }
     }
 }

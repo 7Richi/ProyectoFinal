@@ -47,17 +47,30 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\Persona.cs" />
+    <Compile Include="Clases\usuario.cs" />
+    <Compile Include="Vista\formaPersona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\formaPersona.Designer.cs">
+      <DependentUpon>formaPersona.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\Index.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vista\Index.Designer.cs">
       <DependentUpon>Index.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\menú.cs">
+    <Compile Include="Vista\login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\menú.Designer.cs">
-      <DependentUpon>menú.cs</DependentUpon>
+    <Compile Include="Vista\login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\menu.Designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\nivelBasedeDatos.cs">
       <SubType>Form</SubType>
@@ -85,8 +98,11 @@
     <Compile Include="Vista\Registro.Designer.cs">
       <DependentUpon>Registro.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Vista\menú.resx">
-      <DependentUpon>menú.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\menu.resx">
+      <DependentUpon>menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\nivelBasedeDatos.resx">
       <DependentUpon>nivelBasedeDatos.cs</DependentUpon>
@@ -99,6 +115,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Vista\nivelPoo.resx">
       <DependentUpon>nivelPoo.cs</DependentUpon>
@@ -118,6 +135,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

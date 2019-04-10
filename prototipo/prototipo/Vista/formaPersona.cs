@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace prototipo.Vista
 {
-    public partial class menú : Form
+    public partial class formaPersona : Form
     {
-        public menú()
+        public formaPersona()
         {
             InitializeComponent();
         }

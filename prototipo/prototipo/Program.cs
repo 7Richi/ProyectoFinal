@@ -17,7 +17,7 @@ namespace prototipo
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new nivelRedes());
+            Application.Run(new formaMenu());
         }
     }
 }

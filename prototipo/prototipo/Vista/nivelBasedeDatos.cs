@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using prototipo.Vista;
 
 namespace prototipo
 {
@@ -92,6 +93,13 @@ namespace prototipo
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            formaMenu inicio = new formaMenu();
+            inicio.Show();
+            this.Hide();
         }
     }
 }
