@@ -40,11 +40,12 @@ namespace prototipo.Vista
                 this.Hide();
                 MessageBox.Show("Bienvenido");
                            }
+            else
+            {
+                MessageBox.Show("Datos incorrectos");
+            }
         }
-        else 
-        {
-            MessageBox.Show("Datos incorrectos");
-        }
+        
         
     }
 }
