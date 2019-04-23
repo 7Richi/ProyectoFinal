@@ -92,12 +92,9 @@
     <Compile Include="Vista\nivelRedes.Designer.cs">
       <DependentUpon>nivelRedes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\Registro.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vista\Registro.Designer.cs">
-      <DependentUpon>Registro.cs</DependentUpon>
-    </Compile>
+    <EmbeddedResource Include="Vista\formaPersona.resx">
+      <DependentUpon>formaPersona.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
@@ -138,6 +135,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\me.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

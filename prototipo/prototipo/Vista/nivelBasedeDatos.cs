@@ -83,7 +83,39 @@ namespace prototipo
                         int aleatorio = alea.Next(25);
                         string caracter = letras[aleatorio];
                         boton[i, j].BackColor = Color.White;
-                        boton[i, j].Text = caracter;//String.Format("{0},{1}", i, j);
+                        if (i == 3 && j == 3)
+                        {
+                            caracter = "H";
+                            boton[i, j].Text = caracter;//String.Format("{0},{1}", i, j);
+                        }
+                        else
+                        {
+                            if (i == 4 && j == 4)
+                            {
+                                caracter = "O";
+                                boton[i, j].Text = caracter;//String.Format("{0},{1}", i, j);
+                            }
+                            else
+                            {
+                                if (i == 5 && j == 5)
+                                {
+                                    caracter = "L";
+                                    boton[i, j].Text = caracter;//String.Format("{0},{1}", i, j);
+                                }
+                                else
+                                {
+                                    if (i == 6 && j == 6)
+                                    {
+                                        caracter = "A";
+                                        boton[i, j].Text = caracter;//String.Format("{0},{1}", i, j);
+                                    }
+                                    else
+                                    {
+                                        boton[i, j].Text = caracter;//String.Format("{0},{1}", i, j);
+                                    }
+                                }
+                            }
+                        }
                     }
                 }//FIN DE CICLO FOR DENTRO DE
             }//FIN DE FOR
@@ -100,6 +132,14 @@ namespace prototipo
             formaMenu inicio = new formaMenu();
             inicio.Show();
             this.Hide();
+        }
+
+
+        
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

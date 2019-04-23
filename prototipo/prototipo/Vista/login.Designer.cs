@@ -74,6 +74,7 @@
             // 
             this.pass.Location = new System.Drawing.Point(145, 89);
             this.pass.Name = "pass";
+            this.pass.PasswordChar = '*';
             this.pass.Size = new System.Drawing.Size(155, 20);
             this.pass.TabIndex = 4;
             // 
@@ -95,6 +96,7 @@
             this.button2.TabIndex = 6;
             this.button2.Text = "Salir";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // login
             // 
@@ -110,6 +112,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "login";
             this.ResumeLayout(false);
             this.PerformLayout();
