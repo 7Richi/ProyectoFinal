@@ -69,6 +69,7 @@
             this.correo.Name = "correo";
             this.correo.Size = new System.Drawing.Size(155, 20);
             this.correo.TabIndex = 3;
+            this.correo.TextChanged += new System.EventHandler(this.correo_TextChanged);
             // 
             // pass
             // 

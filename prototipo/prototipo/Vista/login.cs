@@ -50,5 +50,10 @@ namespace prototipo.Vista
         {
             Application.Exit();
         }
+
+        private void correo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

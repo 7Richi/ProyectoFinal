@@ -18,7 +18,7 @@ namespace prototipo.Vista
             InitializeComponent();
             Button[,] boton = new Button[12, 12];
             string[] words = { "ROUTER", "CISCO", "SWITCH", "SERVIDOR", "PING", "SUCCESSFUL",
-                "ETARKCOLC", "HOSTNAME", "DERBUS", "ELOSNOC", "HOST", "ARACSAM" };
+                "ETARKCOLC", "DHCP", "DERBUS", "ELOSNOC", "HOST", "ARACSAM" };
             Random alea = new Random();
             string[] letras = { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" };
 

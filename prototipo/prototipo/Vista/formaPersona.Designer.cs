@@ -40,6 +40,10 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textname = new System.Windows.Forms.TextBox();
+            this.textno = new System.Windows.Forms.TextBox();
+            this.textg = new System.Windows.Forms.TextBox();
+            this.texteda = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -156,11 +160,44 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
+            // textname
+            // 
+            this.textname.Location = new System.Drawing.Point(247, 12);
+            this.textname.Name = "textname";
+            this.textname.Size = new System.Drawing.Size(162, 20);
+            this.textname.TabIndex = 13;
+            this.textname.TextChanged += new System.EventHandler(this.textname_TextChanged);
+            // 
+            // textno
+            // 
+            this.textno.Location = new System.Drawing.Point(247, 42);
+            this.textno.Name = "textno";
+            this.textno.Size = new System.Drawing.Size(162, 20);
+            this.textno.TabIndex = 14;
+            // 
+            // textg
+            // 
+            this.textg.Location = new System.Drawing.Point(247, 69);
+            this.textg.Name = "textg";
+            this.textg.Size = new System.Drawing.Size(162, 20);
+            this.textg.TabIndex = 15;
+            // 
+            // texteda
+            // 
+            this.texteda.Location = new System.Drawing.Point(247, 92);
+            this.texteda.Name = "texteda";
+            this.texteda.Size = new System.Drawing.Size(162, 20);
+            this.texteda.TabIndex = 16;
+            // 
             // formaPersona
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(410, 261);
+            this.Controls.Add(this.texteda);
+            this.Controls.Add(this.textg);
+            this.Controls.Add(this.textno);
+            this.Controls.Add(this.textname);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label7);
@@ -175,6 +212,7 @@
             this.Controls.Add(this.label1);
             this.Name = "formaPersona";
             this.Text = "formaPersona";
+            this.Load += new System.EventHandler(this.formaPersona_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -195,5 +233,9 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.TextBox textname;
+        private System.Windows.Forms.TextBox textno;
+        private System.Windows.Forms.TextBox textg;
+        private System.Windows.Forms.TextBox texteda;
     }
 }
